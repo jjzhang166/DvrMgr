@@ -1,0 +1,815 @@
+{
+    "type": "Ext.container.Viewport",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|initialView": true,
+        "designer|userClassName": "MainView",
+        "itemId": "mainView",
+        "layout": "border"
+    },
+    "designerId": "ccf11f1b-c72a-44fc-9803-344ace6f3349",
+    "cn": [
+        {
+            "type": "Ext.panel.Panel",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "bodyPadding": 10,
+                "bodyStyle": [
+                    "{",
+                    "    background: '#104B86',  ",
+                    "    padding: '10px'  ",
+                    "}"
+                ],
+                "header": false,
+                "height": 102,
+                "itemId": "headerPanel",
+                "layout|region": "north",
+                "title": "Header"
+            },
+            "name": "MyPanel1",
+            "designerId": "d12ff238-6d23-4f16-b276-6ecc63966fbf",
+            "cn": [
+                {
+                    "type": "Ext.Img",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "height": 62,
+                        "src": "images/0011.png",
+                        "width": 430
+                    },
+                    "name": "MyImg",
+                    "designerId": "0a17a5ca-e2bb-4d85-966f-903597e1232b"
+                }
+            ]
+        },
+        {
+            "type": "Ext.panel.Panel",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "collapseDirection": "left",
+                "collapsible": true,
+                "container|hideCollapseTool": false,
+                "itemId": "menuPanel",
+                "layout": "accordion",
+                "layout|collapseMode": null,
+                "layout|region": "west",
+                "layout|split": true,
+                "title": "系统导航",
+                "width": 250
+            },
+            "name": "MyPanel2",
+            "designerId": "ec429cf4-e38a-4872-a33d-5a8029944736",
+            "cn": [
+                {
+                    "type": "Ext.panel.Panel",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "collapsed": false,
+                        "icon": "images/add.png",
+                        "itemId": null,
+                        "overlapHeader": false,
+                        "title": "数据管理"
+                    },
+                    "name": "MyPanel3",
+                    "designerId": "e84deeed-6215-4aca-a04d-0914b9702e93",
+                    "cn": [
+                        {
+                            "type": "Ext.menu.Menu",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "floating": false,
+                                "itemId": "menu1",
+                                "width": null
+                            },
+                            "name": "MyMenu",
+                            "designerId": "5a8b8303-a313-4e47-b17a-5a32abd91d8d",
+                            "cn": [
+                                {
+                                    "type": "linkedinstance",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "name": "mymenuitem1",
+                                    "designerId": "700a6e50-f1d7-4a5f-873d-f170bc7104c7",
+                                    "masterInstanceId": "6f431ae3-716e-4fe6-82ab-8ada3bb57e59"
+                                },
+                                {
+                                    "type": "Ext.menu.Item",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "text": "申请调阅"
+                                    },
+                                    "name": "MyMenuItem1",
+                                    "designerId": "e34d3196-d2b5-4c4e-96b1-c5b9d2b5b6c7"
+                                },
+                                {
+                                    "type": "Ext.menu.Item",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "text": "非现场录入"
+                                    },
+                                    "name": "MyMenuItem2",
+                                    "designerId": "ba0c7b3e-b07d-444b-b0c4-315e09096294"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "type": "Ext.panel.Panel",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "title": "我的地盘"
+                    },
+                    "name": "MyPanel4",
+                    "designerId": "bba14e45-2837-4d8e-a872-662c5091881c",
+                    "cn": [
+                        {
+                            "type": "Ext.menu.Menu",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "floating": false,
+                                "itemId": "menu2",
+                                "width": null
+                            },
+                            "name": "MyMenu1",
+                            "designerId": "e587c1dd-ec3d-4424-b5e7-7f1813466103",
+                            "cn": [
+                                {
+                                    "type": "Ext.menu.Item",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "text": "个人信息"
+                                    },
+                                    "name": "MyMenuItem3",
+                                    "designerId": "c770dbb5-a50a-473c-8a44-23d286934911"
+                                },
+                                {
+                                    "type": "Ext.menu.Item",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "text": "待审事项"
+                                    },
+                                    "name": "MyMenuItem4",
+                                    "designerId": "beb13bbb-44b2-4fb0-97e0-73f2e7187f02"
+                                },
+                                {
+                                    "type": "Ext.menu.Item",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "text": "已审事项"
+                                    },
+                                    "name": "MyMenuItem5",
+                                    "designerId": "cfe59057-3ba4-4721-9511-6d7cda87e10c"
+                                },
+                                {
+                                    "type": "Ext.menu.Item",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "text": "我的投诉"
+                                    },
+                                    "name": "MyMenuItem21",
+                                    "designerId": "7ad02b23-566d-4f60-8679-9f182490479a"
+                                },
+                                {
+                                    "type": "Ext.menu.Item",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "text": "我的评价"
+                                    },
+                                    "name": "MyMenuItem22",
+                                    "designerId": "76947a98-5639-4d9e-a5b2-5be966750efd"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "type": "Ext.panel.Panel",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "title": "使用监督"
+                    },
+                    "name": "MyPanel8",
+                    "designerId": "d452ee20-b31a-492f-bdb1-40d3dd58d27b",
+                    "cn": [
+                        {
+                            "type": "Ext.menu.Menu",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "floating": false,
+                                "width": 120
+                            },
+                            "name": "MyMenu3",
+                            "designerId": "4fb5b40a-d357-40dc-81fd-a876fcc15200",
+                            "cn": [
+                                {
+                                    "type": "Ext.menu.Item",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "text": "执法仪"
+                                    },
+                                    "name": "MyMenuItem13",
+                                    "designerId": "2bbf322c-aa54-428c-b2e6-51656308562f"
+                                },
+                                {
+                                    "type": "Ext.menu.Item",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "text": "采集工作站"
+                                    },
+                                    "name": "MyMenuItem14",
+                                    "designerId": "ee793145-7e58-47b0-ab20-0a90465f2348"
+                                },
+                                {
+                                    "type": "Ext.menu.Item",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "text": "异常报警"
+                                    },
+                                    "name": "MyMenuItem15",
+                                    "designerId": "3a77a42d-5f64-4428-8de3-3787cf96de07"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "type": "Ext.panel.Panel",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "title": "执法监督"
+                    },
+                    "name": "MyPanel7",
+                    "designerId": "1483acbe-ef9c-4cde-823d-e2062d19ede4",
+                    "cn": [
+                        {
+                            "type": "Ext.menu.Menu",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "floating": false,
+                                "width": 120
+                            },
+                            "name": "MyMenu4",
+                            "designerId": "c6e1120c-c86a-43dc-bbfb-a32f1fe67d07",
+                            "cn": [
+                                {
+                                    "type": "Ext.menu.Item",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "text": "主动监督"
+                                    },
+                                    "name": "MyMenuItem16",
+                                    "designerId": "263348f3-49e9-4e08-913e-c96206d608f5"
+                                },
+                                {
+                                    "type": "Ext.menu.Item",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "text": "被动监督"
+                                    },
+                                    "name": "MyMenuItem17",
+                                    "designerId": "51b17f23-dc2a-4a4a-a351-a74dffe9f5f3"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "type": "Ext.panel.Panel",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "title": "监督考评"
+                    },
+                    "name": "MyPanel9",
+                    "designerId": "8f36f074-c027-422c-9dce-55ff3d9f83af",
+                    "cn": [
+                        {
+                            "type": "Ext.menu.Menu",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "floating": false,
+                                "width": 120
+                            },
+                            "name": "MyMenu5",
+                            "designerId": "2ec803af-3308-4313-b34b-a7a13d86d00b",
+                            "cn": [
+                                {
+                                    "type": "Ext.menu.Item",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "text": "评价考评"
+                                    },
+                                    "name": "MyMenuItem18",
+                                    "designerId": "8d263fcc-6425-41c0-8de5-7fea0953f5cd"
+                                },
+                                {
+                                    "type": "Ext.menu.Item",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "text": "投诉考评"
+                                    },
+                                    "name": "MyMenuItem19",
+                                    "designerId": "65711376-6696-4905-9920-0d1f3765340a"
+                                },
+                                {
+                                    "type": "Ext.menu.Item",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "text": "拍摄比考评"
+                                    },
+                                    "name": "MyMenuItem20",
+                                    "designerId": "9bac9548-82dd-4718-ae04-29115ad3dba5"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "type": "Ext.panel.Panel",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "title": "统计报表"
+                    },
+                    "name": "MyPanel10",
+                    "designerId": "c5071db2-a9d3-4433-bda9-f7a35016332d",
+                    "cn": [
+                        {
+                            "type": "Ext.menu.Menu",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "floating": false,
+                                "width": 120
+                            },
+                            "name": "MyMenu6",
+                            "designerId": "ce6eb02a-5386-4e59-9661-6a3b39486441",
+                            "cn": [
+                                {
+                                    "type": "Ext.menu.Item",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "text": "业务量统计"
+                                    },
+                                    "name": "MyMenuItem23",
+                                    "designerId": "0bcc959e-263d-4410-9296-26301001a833"
+                                },
+                                {
+                                    "type": "Ext.menu.Item",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "text": "异常数据统计"
+                                    },
+                                    "name": "MyMenuItem24",
+                                    "designerId": "bbf554c4-8fbc-4ba1-a3f4-2e37bf44551c"
+                                },
+                                {
+                                    "type": "Ext.menu.Item",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "text": "考核分值统计"
+                                    },
+                                    "name": "MyMenuItem25",
+                                    "designerId": "51b59378-cced-4da6-aa84-786a71b4112c"
+                                },
+                                {
+                                    "type": "Ext.menu.Item",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "text": "设备台帐统计"
+                                    },
+                                    "name": "MyMenuItem26",
+                                    "designerId": "b07f8fd0-bc79-42cf-88ff-94d3abec2a00"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "type": "Ext.panel.Panel",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "title": "系统管理"
+                    },
+                    "name": "MyPanel5",
+                    "designerId": "75661fc3-906d-4861-8b6b-3f46f5df3d1b",
+                    "cn": [
+                        {
+                            "type": "Ext.menu.Menu",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "floating": false,
+                                "itemId": "menu3",
+                                "width": null
+                            },
+                            "name": "MyMenu2",
+                            "designerId": "0b76075d-71c5-4330-b36a-2f20b79602f9",
+                            "cn": [
+                                {
+                                    "type": "Ext.menu.Item",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "text": "部门管理"
+                                    },
+                                    "name": "MyMenuItem6",
+                                    "designerId": "58af5433-8fcd-4e1e-8b72-393dacbac634"
+                                },
+                                {
+                                    "type": "Ext.menu.Item",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "text": "警员管理"
+                                    },
+                                    "name": "MyMenuItem7",
+                                    "designerId": "3475efc3-9da5-4513-a311-15ae6e8cfbee"
+                                },
+                                {
+                                    "type": "Ext.menu.Separator",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "name": "MySeparator",
+                                    "designerId": "d2497b96-a1d9-4477-b46f-510fa5209f99"
+                                },
+                                {
+                                    "type": "Ext.menu.Item",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "text": "执法记录仪管理"
+                                    },
+                                    "name": "MyMenuItem8",
+                                    "designerId": "6dc1aefe-13fa-4d16-85c0-2a2b3d86ebf7"
+                                },
+                                {
+                                    "type": "Ext.menu.Item",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "text": "采集工作站管理"
+                                    },
+                                    "name": "MyMenuItem9",
+                                    "designerId": "2fb09272-27fa-4b06-a297-8690fa3e3fb2"
+                                },
+                                {
+                                    "type": "Ext.menu.Separator",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "name": "MySeparator1",
+                                    "designerId": "91ea83e6-8af9-4b9c-8529-75576f959626"
+                                },
+                                {
+                                    "type": "Ext.menu.Item",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "text": "用户管理"
+                                    },
+                                    "name": "MyMenuItem10",
+                                    "designerId": "03d6ee2b-5cc2-4183-b6d9-996b20adfb33"
+                                },
+                                {
+                                    "type": "Ext.menu.Item",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "text": "角色管理"
+                                    },
+                                    "name": "MyMenuItem12",
+                                    "designerId": "e1e6d2a5-81a7-4c79-92e3-c85ae20bc25b"
+                                },
+                                {
+                                    "type": "Ext.menu.Item",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "text": "权限管理"
+                                    },
+                                    "name": "MyMenuItem11",
+                                    "designerId": "cce98d70-6a96-4f79-8d73-41e30dcb6a0d"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "Ext.panel.Panel",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "bodyStyle": null,
+                "header": false,
+                "html": [
+                    "<img id=\"bgImg\" src=\"images/welcome.png\"/>"
+                ],
+                "itemId": "contentPanel",
+                "layout|flex": 1,
+                "layout|region": "center",
+                "listeners": [
+                    "{",
+                    "    'resize': function(comp, width, height){",
+                    "        Ext.get('bgImg').applyStyles({",
+                    "            width: width + 'px',",
+                    "            height: height + 'px'",
+                    "        });",
+                    "    }",
+                    "}"
+                ],
+                "resizable": [
+                    "true"
+                ],
+                "title": "Content"
+            },
+            "name": "MyPanel6",
+            "configAlternates": {
+                "listeners": "object"
+            },
+            "designerId": "3a200be7-aa02-4bfa-bc13-05b3cebcdf9c",
+            "customConfigs": [
+                {
+                    "group": "(Custom Properties)",
+                    "name": "fun",
+                    "type": "string"
+                },
+                {
+                    "group": "(Custom Properties)",
+                    "name": "listeners",
+                    "type": "string"
+                }
+            ],
+            "cn": [
+                {
+                    "type": "Ext.tab.Panel",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "activeTab": 0
+                    },
+                    "name": "MyTabPanel",
+                    "designerId": "ff165914-d803-493a-a508-44b5dc122887",
+                    "cn": [
+                        {
+                            "type": "Ext.panel.Panel",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "title": "首页"
+                            },
+                            "name": "MyPanel11",
+                            "designerId": "12378745-bec1-4cf0-ab2b-8b3e3cbb26c6",
+                            "cn": [
+                                {
+                                    "type": "Ext.tab.Tab",
+                                    "reference": {
+                                        "name": "tabConfig",
+                                        "type": "object"
+                                    },
+                                    "codeClass": null,
+                                    "name": "TabConfig",
+                                    "designerId": "4be0a717-ba62-4404-8aed-eb6c18234ee6"
+                                }
+                            ]
+                        },
+                        {
+                            "type": "Ext.panel.Panel",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "closable": true,
+                                "title": "Tab 3"
+                            },
+                            "name": "MyPanel13",
+                            "designerId": "788d6d10-d0bf-43d2-9da8-64b72e0e7835",
+                            "cn": [
+                                {
+                                    "type": "Ext.tab.Tab",
+                                    "reference": {
+                                        "name": "tabConfig",
+                                        "type": "object"
+                                    },
+                                    "codeClass": null,
+                                    "name": "TabConfig2",
+                                    "designerId": "980b6ec8-f4b5-450f-bbdc-1ff6553d363d"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "Ext.panel.Panel",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "container|align": "middle",
+                "container|pack": "center",
+                "header": false,
+                "height": 30,
+                "html": [
+                    "<div align=\"center\">版权所有：深圳威尔电器有限公司</div>"
+                ],
+                "layout": "hbox",
+                "layout|region": "south",
+                "layout|split": true,
+                "title": "My Panel"
+            },
+            "name": "MyPanel",
+            "designerId": "bb8a410c-c639-4c7c-81a8-5f11af4502db"
+        }
+    ]
+}

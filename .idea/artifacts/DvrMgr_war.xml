@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="DvrMgr:war">
+    <output-path>$PROJECT_DIR$/target</output-path>
+    <root id="archive" name="DvrMgr.war">
+      <element id="artifact" artifact-name="DvrMgr:war exploded" />
+    </root>
+  </artifact>
+</component>
